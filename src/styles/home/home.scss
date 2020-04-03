@@ -1,0 +1,15 @@
+@import '../vars/vars.scss';
+
+.home {
+    margin-top: 25vh;
+    height: 200vh;
+
+    header {
+        
+        .section-one {
+            width: 70vw;
+            height: 40vh;
+            background-color: yellow;
+        }
+    }
+}

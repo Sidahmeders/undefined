@@ -1,0 +1,47 @@
+@import '../vars/vars.scss';
+
+.nav-bar {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.3em;
+    padding: 0 3vw;
+    &.show {
+        background-color: $prime-col;
+    }
+    
+    ul {
+        display: flex;
+        
+        li {
+            position: relative;
+            display: block;
+            margin: 0 1vw;
+            a {
+                color: $second-col;
+                text-decoration: none;
+            }
+        }
+    }
+    .logo .link {
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 1.8em;
+        color: $second-col;
+    }
+    nav {
+        display: block;
+    }
+    .social-media {
+        ul li a {
+            font-size: 1.5em;
+        }
+    }
+}
