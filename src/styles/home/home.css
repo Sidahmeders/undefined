@@ -19,9 +19,16 @@ body {
   height: 200vh;
 }
 
-.home header .section-one {
-  width: 70vw;
-  height: 40vh;
+.home header .section {
+  width: 65vw;
+  height: 45vh;
   background-color: yellow;
+  margin-top: 5vh;
+  clear: both;
+}
+
+.home header .two, .home header .four {
+  float: right;
+  background-color: #464646;
 }
 /*# sourceMappingURL=home.css.map */

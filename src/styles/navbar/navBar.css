@@ -52,7 +52,7 @@ body {
 }
 
 .nav-bar ul li a {
-  color: #fff671;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ body {
   text-decoration: none;
   line-height: 50px;
   font-size: 1.8em;
-  color: #fff671;
+  color: yellow;
 }
 
 .nav-bar nav {

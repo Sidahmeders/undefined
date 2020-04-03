@@ -8,8 +8,20 @@ function Home() {
          
          <header>
 
-           <section className="section-one">
-             
+           <section className="section one">
+
+           </section>
+
+           <section className="section two">
+
+           </section>
+
+           <section className="section three">
+
+           </section>
+
+           <section className="section four">
+
            </section>
 
          </header>

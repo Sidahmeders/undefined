@@ -6,10 +6,16 @@
 
     header {
         
-        .section-one {
-            width: 70vw;
-            height: 40vh;
+        .section {
+            width: 65vw;
+            height: 45vh;
             background-color: yellow;
+            margin-top: 5vh;
+            clear: both;
+        }
+        .two, .four{
+            float: right;
+            background-color: rgb(70, 70, 70);
         }
     }
 }
