@@ -15,7 +15,7 @@ import '../styles/navbar/navBar.css';
 
   useEffect(() => {
     let nav = document.getElementById('navbar');
-    if(offset > 99) {
+    if(offset > 50) {
       nav.classList.add('show');
     } else {
       nav.classList.remove('show');
@@ -32,13 +32,20 @@ import '../styles/navbar/navBar.css';
       <nav className="nav-links"> 
         <ul>
           <li><Link to="/">home</Link></li>
-          <li><Link to="/">books</Link></li>
-          <li><Link to="/">free tutorials</Link></li>
+          <li><Link to="/">tutorials</Link></li>
           <li><Link to="/">articles</Link></li>
           <li><Link to="/">algorithms</Link></li>
-          <li><Link to="/">videos</Link></li>
+          <li><Link to="/">books</Link></li>
+          <li><Link to="/">forum</Link></li>
         </ul>
       </nav>
+
+      <section className="search-bar">
+        <div className="container">
+          <input type="text" placeholder="Search..." />
+          <div className="search"></div>
+        </div>
+      </section>
 
       <section className="social-media">
         <ul>

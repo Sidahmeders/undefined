@@ -6,11 +6,11 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 body {
-  font-family: 'Baloo Thambi 2', cursive;
-  background: url("../../images/animal-black-and-white-black-and-white-2024898.jpg");
+  background: #ffe600;
   background-size: contain;
 }
 /*# sourceMappingURL=vars.css.map */

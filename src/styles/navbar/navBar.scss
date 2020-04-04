@@ -3,8 +3,9 @@
 .nav-bar {
     position: fixed;
     z-index: 99;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
+    padding: 0 3vw;
     top: 0;
     left: 0;
     display: flex;
@@ -12,7 +13,7 @@
     align-items: center;
     background-color: transparent;
     font-size: 1.3em;
-    padding: 0 3vw;
+    transition: 1s ease;
     &.show {
         background-color: $prime-col;
     }
@@ -36,8 +37,113 @@
         font-size: 1.8em;
         color: $second-col;
     }
+    .search-bar {
+        position: absolute;
+        left: 15%;
+        top: -25%;
+
+        .container {
+            margin: auto;
+            width: 190px;
+            height: 100px;
+            right: 0%;
+            .search {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                transition: all 1s;
+                z-index: 4;
+                &:hover {
+                    cursor: pointer;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    margin: auto;
+                    top: 20px;
+                    right: 0;
+                    bottom: 0;
+                    left: 15px;
+                    width: 10px;
+                    height: 2px;
+                    background: $second-col;
+                    transform: rotate(45deg);
+                    transition: all .5s;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    margin: auto;
+                    top: -5px;
+                    right: 0;
+                    bottom: 0;
+                    left: -5px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid $second-col;
+                    transition: all .5s;
+                }
+            }
+            input {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                outline: none;
+                border: none;
+                padding: 0 15px;
+                border-radius: 30px;
+                transition: all 1s;
+                opacity: 0;
+                z-index: 5;
+                letter-spacing: 0.1em;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:focus {
+                    width: 190px;
+                    opacity: 1;
+                    cursor: text;
+                }
+                &:focus ~ .search {
+                    right: -150px;
+                    background: rgb(100, 100, 100);
+                    z-index: 6;
+                    &::before {
+                        top: 0;
+                        left: 0;
+                        width: 24px;
+                    }
+                    &::after {
+                        top: 0;
+                        left: 0;
+                        width: 24px;
+                        height: 2px;
+                        border: none;
+                        background: $second-col;
+                        border-radius: 0%;
+                        transform: rotate(-45deg);
+                    }
+                }
+                &::placeholder {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
     nav {
-        display: block;
+        margin-left: 2vw;
     }
     .social-media {
         ul li a {

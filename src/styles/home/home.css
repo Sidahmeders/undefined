@@ -6,29 +6,54 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 body {
-  font-family: 'Baloo Thambi 2', cursive;
-  background: url("../../images/animal-black-and-white-black-and-white-2024898.jpg");
+  background: #ffe600;
   background-size: contain;
 }
 
 .home {
-  margin-top: 25vh;
-  height: 200vh;
+  margin-top: 20vh;
+}
+
+.home header {
+  color: #555555;
 }
 
 .home header .section {
-  width: 65vw;
-  height: 45vh;
-  background-color: yellow;
-  margin-top: 5vh;
-  clear: both;
+  width: 50vw;
+  margin: 0 3vh;
+  font-size: 1.4em;
+  padding: 1vh 3vw;
 }
 
-.home header .two, .home header .four {
+.home header .section.two {
   float: right;
-  background-color: #464646;
+  width: 30vw;
+}
+
+.home header .section.two .js-logo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5vh 0;
+  font-size: 12vw;
+  text-align: center;
+  border: 5px solid #555555;
+}
+
+.home header .section.three {
+  margin-top: 10vh;
+}
+
+.home header a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  font-size: 1.8em;
+  border: 2px solid white;
+  padding: 3px 10px;
 }
 /*# sourceMappingURL=home.css.map */

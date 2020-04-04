@@ -1,21 +1,41 @@
 @import '../vars/vars.scss';
 
 .home {
-    margin-top: 25vh;
-    height: 200vh;
+    margin-top: 20vh;
 
     header {
+        color: $prime-col;
         
         .section {
-            width: 65vw;
-            height: 45vh;
-            background-color: yellow;
-            margin-top: 5vh;
-            clear: both;
+            width: 50vw;
+            margin: 0 3vh;
+            font-size: 1.4em;
+            padding: 1vh 3vw;
         }
-        .two, .four{
+        .section.two {
             float: right;
-            background-color: rgb(70, 70, 70);
+            width: 30vw;
+    
+            .js-logo {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 5vh 0;
+                font-size: 12vw;
+                text-align: center;
+                border: 5px solid $prime-col;
+            }
+        }
+        .section.three {
+            margin-top: 10vh;
+        }
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            position: absolute;
+            left: 45%;
+            bottom: 5%;
+            font-size: 1.8em;
+            border: 2px solid white;
+            padding: 3px 10px;
         }
     }
 }
