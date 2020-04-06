@@ -10,7 +10,22 @@
 }
 
 body {
-  background: #ffe600;
+  position: relative;
+  background-color: #ffe600;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -8%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../images/js-ts.jpg");
   background-size: contain;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: .1;
 }
 /*# sourceMappingURL=vars.css.map */

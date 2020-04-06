@@ -20,7 +20,7 @@ import '../styles/navbar/navBar.css';
     } else {
       nav.classList.remove('show');
     }
-  })
+  });
 
   return (
     <div id="navbar" className="nav-bar">
@@ -63,8 +63,7 @@ import '../styles/navbar/navBar.css';
       </section>
       
     </div>
-  )
-}
-
+  );
+};
 
 export default NavBar;

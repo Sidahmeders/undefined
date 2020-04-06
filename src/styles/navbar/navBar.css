@@ -10,8 +10,23 @@
 }
 
 body {
-  background: #ffe600;
+  position: relative;
+  background-color: #ffe600;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -8%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../images/js-ts.jpg");
   background-size: contain;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: .1;
 }
 
 .nav-bar {
@@ -41,6 +56,14 @@ body {
   background-color: #555555;
 }
 
+.nav-bar.show ul li a:hover {
+  color: yellow;
+}
+
+.nav-bar.show .logo .link:hover {
+  color: yellow;
+}
+
 .nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +79,12 @@ body {
 .nav-bar ul li a {
   color: white;
   text-decoration: none;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.nav-bar ul li a:hover {
+  color: #555555;
 }
 
 .nav-bar .logo .link {
@@ -63,6 +92,12 @@ body {
   line-height: 50px;
   font-size: 1.8em;
   color: white;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.nav-bar .logo .link:hover {
+  color: #555555;
 }
 
 .nav-bar .search-bar {
@@ -141,7 +176,7 @@ body {
   height: 40px;
   outline: none;
   border: none;
-  padding: 0 15px;
+  padding: 2px 50px 0 15px;
   border-radius: 30px;
   -webkit-transition: all 1s;
   transition: all 1s;

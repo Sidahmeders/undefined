@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
 
+$back-col: rgb(255, 230, 0);
+$prime-col: rgb(85, 85, 85);
+$second-col: rgb(255, 255, 255);
+$thir-col: yellow;
+
+$ease: .6s ease;
+
+
 *, 
 ::before, 
 ::after {
@@ -10,11 +18,20 @@
 }
 
 body {
-    background: rgb(255, 230, 0);
-    background-size: contain;
+    position: relative;
+    background-color: $back-col;
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: -8%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url('../../images/js-ts.jpg');
+        background-size: contain;
+        background-attachment: fixed;
+        z-index: -1;
+        opacity: .1;
+    }
 }
-
-
-$prime-col: rgb(85, 85, 85);
-$second-col: rgb(255, 255, 255);
-$thir-col: yellow;

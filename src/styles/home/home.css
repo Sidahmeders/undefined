@@ -10,8 +10,23 @@
 }
 
 body {
-  background: #ffe600;
+  position: relative;
+  background-color: #ffe600;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -8%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../images/js-ts.jpg");
   background-size: contain;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: .1;
 }
 
 .home {
@@ -24,6 +39,7 @@ body {
 
 .home header .section {
   width: 50vw;
+  height: 35vh;
   margin: 0 3vh;
   font-size: 1.4em;
   padding: 1vh 3vw;
@@ -32,6 +48,7 @@ body {
 .home header .section.two {
   float: right;
   width: 30vw;
+  height: 45vh;
 }
 
 .home header .section.two .js-logo {
@@ -43,17 +60,127 @@ body {
 }
 
 .home header .section.three {
-  margin-top: 10vh;
+  margin-top: 5vh;
+  height: 40vh;
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.3vh;
+  padding: 0;
+  margin-left: 4vw;
+  border: 6px solid yellow;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
-.home header a {
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  left: 45%;
-  bottom: 5%;
-  font-size: 1.8em;
-  border: 2px solid white;
-  padding: 3px 10px;
+.home header .section.three p {
+  margin: 5px 0;
+}
+
+.home header .section.three .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #6e6e6e;
+  padding: 2vh 3vw;
+  border: 4px solid white;
+  color: gold;
+}
+
+.home header .section.three .card.right {
+  padding-right: 5vw;
+  -webkit-transform: translate(-2vw, 2vh);
+          transform: translate(-2vw, 2vh);
+}
+
+.home header .section.three .card.left {
+  -webkit-transform: translate(-5vw, -40px);
+          transform: translate(-5vw, -40px);
+}
+
+.home main .section {
+  height: 90vh;
+  background-color: #555555;
+}
+
+.home main .section.two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home main .section.two div {
+  height: 210px;
+  margin: 10px;
+  position: relative;
+  border: 3px solid white;
+  background-color: white;
+}
+
+.home main .section.two div:hover {
+  cursor: pointer;
+}
+
+.home main .section.two div p {
+  color: #555555;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.home main .section.two div span {
+  display: block;
+  width: 300px;
+  height: 170px;
+}
+
+.home main .section.two div:nth-child(1) span {
+  background: url("../../images/yt-1.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(2) span {
+  background: url("../../images/yt-2.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(3) span {
+  background: url("../../images/yt-3.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(4) span {
+  background: url("../../images/yt-4.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(5) span {
+  background: url("../../images/yt-5.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(6) span {
+  background: url("../../images/yt-6.jpg");
+  background-size: contain;
+}
+
+.home main .section.two div:nth-child(7) span {
+  background: url("../../images/yt-7.jpg");
+  background-size: contain;
 }
 /*# sourceMappingURL=home.css.map */

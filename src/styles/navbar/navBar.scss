@@ -16,6 +16,8 @@
     transition: 1s ease;
     &.show {
         background-color: $prime-col;
+        ul li a:hover {color: $thir-col;}
+        .logo .link:hover {color: $thir-col;}
     }
     
     ul {
@@ -28,6 +30,10 @@
             a {
                 color: $second-col;
                 text-decoration: none;
+                transition: $ease;
+                &:hover {
+                    color: $prime-col;
+                }
             }
         }
     }
@@ -36,6 +42,10 @@
         line-height: 50px;
         font-size: 1.8em;
         color: $second-col;
+        transition: $ease;
+        &:hover {
+            color: $prime-col;
+        }
     }
     .search-bar {
         position: absolute;
@@ -102,7 +112,7 @@
                 height: 40px;
                 outline: none;
                 border: none;
-                padding: 0 15px;
+                padding: 2px 50px 0 15px;
                 border-radius: 30px;
                 transition: all 1s;
                 opacity: 0;
