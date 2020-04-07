@@ -107,25 +107,101 @@ body:before {
 }
 
 .home main .section {
-  height: 90vh;
   background-color: #555555;
-}
-
-.home main .section.two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.home main .section.two div {
+.home main .section.one {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.home main .section.one .text h1 {
+  font-weight: 100;
+  padding-top: 2vh;
+  color: yellow;
+}
+
+.home main .section.one .text ul {
+  padding-left: 18px;
+}
+
+.home main .section.one .image div {
+  position: relative;
+  border: 5px solid white;
+}
+
+.home main .section.one .image div span {
+  display: block;
+  width: 28vw;
+  height: 19vw;
+  background-position: center !important;
+}
+
+.home main .section.one .image div p {
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  background-color: #555555;
+  color: whitesmoke;
+  padding: 9px 6px;
+  width: 70%;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.home main .section.one .image div:nth-child(1) {
+  -webkit-transform: translate(40px, 65px);
+          transform: translate(40px, 65px);
+  z-index: 2;
+}
+
+.home main .section.one .image div:nth-child(1) span {
+  background: url("../../images/books.jpg");
+  background-size: cover;
+}
+
+.home main .section.one .image div:nth-child(2) {
+  -webkit-transform: translate(-40px, 30px);
+          transform: translate(-40px, 30px);
+  z-index: 1;
+}
+
+.home main .section.one .image div:nth-child(2) span {
+  background: url("../../images/codes.jpg");
+  background-size: cover;
+}
+
+.home main .section.one .image div:nth-child(3) {
+  -webkit-transform: translate(40px, -20px);
+          transform: translate(40px, -20px);
+}
+
+.home main .section.one .image div:nth-child(3) span {
+  background: url("../../images/solve.jpg");
+  background-size: cover;
+}
+
+.home main .section.two {
+  height: 70vh;
+  background-color: transparent;
+}
+
+.home main .section.three {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home main .section.three div {
   height: 210px;
   margin: 10px;
   position: relative;
@@ -133,54 +209,59 @@ body:before {
   background-color: white;
 }
 
-.home main .section.two div:hover {
+.home main .section.three div:hover {
   cursor: pointer;
 }
 
-.home main .section.two div p {
+.home main .section.three div p {
   color: #555555;
   text-align: center;
   margin-top: 5px;
 }
 
-.home main .section.two div span {
+.home main .section.three div span {
   display: block;
   width: 300px;
   height: 170px;
 }
 
-.home main .section.two div:nth-child(1) span {
+.home main .section.three div:nth-child(1) span {
   background: url("../../images/yt-1.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(2) span {
+.home main .section.three div:nth-child(2) span {
   background: url("../../images/yt-2.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(3) span {
+.home main .section.three div:nth-child(3) span {
   background: url("../../images/yt-3.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(4) span {
+.home main .section.three div:nth-child(4) span {
   background: url("../../images/yt-4.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(5) span {
+.home main .section.three div:nth-child(5) span {
   background: url("../../images/yt-5.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(6) span {
+.home main .section.three div:nth-child(6) span {
   background: url("../../images/yt-6.jpg");
   background-size: contain;
 }
 
-.home main .section.two div:nth-child(7) span {
+.home main .section.three div:nth-child(7) span {
   background: url("../../images/yt-7.jpg");
+  background-size: contain;
+}
+
+.home main .section.three div:nth-child(8) span {
+  background: url("../../images/yt-8.jpg");
   background-size: contain;
 }
 /*# sourceMappingURL=home.css.map */

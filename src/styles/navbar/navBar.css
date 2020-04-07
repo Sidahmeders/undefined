@@ -103,7 +103,6 @@ body:before {
 .nav-bar .search-bar {
   position: absolute;
   left: 15%;
-  top: -25%;
 }
 
 .nav-bar .search-bar .container {
