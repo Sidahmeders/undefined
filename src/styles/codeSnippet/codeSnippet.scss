@@ -1,0 +1,39 @@
+@import '../vars/vars.scss';
+
+
+.code-area {
+    background-color: #111;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        width: 50vw;
+        
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            display: block;
+            text-align: start;
+            margin-top: 5px;
+            color: rgb(59, 216, 106);
+            white-space: pre-wrap;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: #333;
+        color: $second-col;
+        padding: 4px 20px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        &:hover {
+            cursor: pointer;
+            background-color: $prime-col;
+        }
+    }
+}

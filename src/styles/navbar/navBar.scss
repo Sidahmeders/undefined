@@ -16,6 +16,7 @@
     transition: 1s ease;
     &.show {
         background-color: $prime-col;
+        border-bottom: 1px solid $second-col;
         ul li a:hover {color: $thir-col;}
         .logo .link:hover {color: $thir-col;}
     }

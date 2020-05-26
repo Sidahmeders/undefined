@@ -132,8 +132,20 @@
                 }
             }
             &.two {
-                height: 70vh;
-                background-color: transparent;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                padding: 70px 10px;
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 15px;
+                    letter-spacing: 7px;
+                    color: $thir-col;
+                }
+                p {
+                    color: $second-col;
+                    font-size: 22px;
+                }
             }
             &.three { 
                 justify-content: center;

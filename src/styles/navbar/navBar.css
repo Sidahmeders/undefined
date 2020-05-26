@@ -54,6 +54,7 @@ body:before {
 
 .nav-bar.show {
   background-color: #555555;
+  border-bottom: 1px solid white;
 }
 
 .nav-bar.show ul li a:hover {

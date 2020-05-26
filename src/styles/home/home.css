@@ -189,8 +189,27 @@ body:before {
 }
 
 .home main .section.two {
-  height: 70vh;
-  background-color: transparent;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 10px;
+}
+
+.home main .section.two h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  letter-spacing: 7px;
+  color: yellow;
+}
+
+.home main .section.two p {
+  color: white;
+  font-size: 22px;
 }
 
 .home main .section.three {

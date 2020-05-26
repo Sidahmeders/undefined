@@ -1,15 +1,24 @@
 import React from 'react';
-import '../styles/home/home.css'
+import '../styles/home/home.css';
+import CodeShop from './codeShop.component';
+import { codeArea } from './codeSnippet.component';
 
 
 function Home() {
   
+  const sectionDiv = text => {
+    return (
+      <div>
+        <span></span>
+        <p>{text}</p>
+      </div>
+    );
+  };
 
     return(
        <div className="home">
-         
-         <header>
 
+         <header>
            <section className="section one">
              <h1>Wellcome to the place where javascript is made simple</h1>
              <p>
@@ -48,11 +57,9 @@ function Home() {
               </small>
             </div>
           </section>
-
          </header>
 
          <main>
-
            <section className="section one">
              <div className="text">
                <h1>Why learn JavaScript?</h1>
@@ -88,60 +95,40 @@ function Home() {
              </div> 
 
              <div className="image">
-               <div>
-                <span></span>
-                <p>what are waiting for to start coding!</p>
-               </div>
-               <div>
-                 <span></span>
-                 <p>the best time to code was a year ago the second best time is now</p>
-               </div>
-               <div>
-                 <span></span>
-                 <p>how do you stand out from the rest is how you learn</p>
-               </div>
+               {sectionDiv("what are waiting for to start coding!")}
+               {sectionDiv("the best time to code was a year ago the second best time is now")}
+               {sectionDiv("how do you stand out from the rest is how you learn")}
              </div>
            </section>
 
            <section className="section two">
-             
+             <h1>let us waste no time and start your first program</h1>
+             <div>
+               <p>
+                  just <span style={{color:"#0df"}}>copy</span> and <span style={{color:"#0df"}}>paste </span> 
+                  this <span style={{color:"#0f0"}}>code</span> below and click on the <span style={{color:"#d90"}}>red buuton</span>
+               </p>
+               {codeArea(`("hello world")`)}
+               {codeArea(`var a = 5;`, `var b = 3;`, `a + b + 10`)}
+               {codeArea(
+                 `function helloWorld(text) {`, `   return text;`, `}`, 
+                  `helloWorld('good bye world')`
+               )}
+             </div>
+             <p style={{color:"#ddd", marginTop:"22px"}}><span style={{color:"#f88"}}>CAUTION:</span> dont try running infinte loops.</p>
+             <CodeShop />
            </section>
-
+          
            <section className="section three">
-            <div>
-              <span></span>
-              <p>Web Development In 2020</p>
-            </div>
-            <div>
-              <span></span>
-              <p>HTML Crash Course</p>
-            </div>
-            <div>
-              <span></span>
-              <p>CSS Crash Course</p>
-            </div>
-            <div>
-              <span></span>
-              <p>React JS Crash Course</p>
-            </div>
-            <div>
-              <span></span>
-              <p>Vue JS Crash Course</p>
-            </div>
-            <div>
-              <span></span>
-              <p>Git Crash Course</p>
-            </div>
-            <div>
-              <span></span>
-              <p>Node.js For Beginners</p>
-            </div>
-            <div>
-              <span></span>
-              <p>JavaScript for Beginners</p>
-            </div>
+             {sectionDiv("Web Development In 2020")}
+             {sectionDiv("HTML Crash Course")}
+             {sectionDiv("CSS Crash Course")}
+             {sectionDiv("React JS Crash Course")}
+             {sectionDiv("Vue JS Crash Course")}
+             {sectionDiv("Git Crash Course")}
+             {sectionDiv("Node.js For Beginners")}
+             {sectionDiv("JavaScript for Beginners")}
            </section>
-
          </main>
 
        </div> 
