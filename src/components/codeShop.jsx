@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/codeShop/codeShop.css';
+import '../styles/codeShop.scss';
 
 
 function CodeShop() {

@@ -1,7 +1,7 @@
-import React from 'react';
-import '../styles/home/home.css';
-import CodeShop from './codeShop.component';
-import { codeArea } from './codeSnippet.component';
+import React from 'react'
+import '../styles/home.scss'
+import CodeShop from '../components/codeShop'
+import { codeArea } from '../components/codeSnippet'
 
 
 function Home() {
@@ -12,8 +12,8 @@ function Home() {
         <span></span>
         <p>{text}</p>
       </div>
-    );
-  };
+    )
+  }
 
     return(
        <div className="home">
@@ -153,7 +153,8 @@ function Home() {
          </main>
 
        </div> 
-    );
-};
+    )
+}
 
-export default Home;
+
+export default Home

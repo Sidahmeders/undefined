@@ -1,8 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import HomePage from './components/home';
-import NavBar from './components/navbar.component';
+import HomePage from './pages/home'
+import NavBar from './components/navbar'
+import Footer from './components/footer'
 
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
           <Switch>
             <Route path="/" exact  component={ HomePage } />
           </Switch>
+          <Footer />
         </div>
       </Router>
-      );
+      )
 }
 
-export default App;
+export default App

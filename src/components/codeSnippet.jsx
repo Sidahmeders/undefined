@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/codeSnippet/codeSnippet.css';
+import '../styles/codeSnippet.scss';
 
 export const codeArea = (...argument) => {
     const copyTheText = () => {

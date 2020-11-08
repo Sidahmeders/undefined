@@ -1,4 +1,4 @@
-@import '../vars/vars.scss';
+@import './vars.scss';
 
 .home {
     margin-top: 20vh;
@@ -67,7 +67,7 @@
             background-color: $prime-col;
             align-items: center;
             display: flex;
-            width: 98.8vw;
+            width: 99vw;
 
             &.one {
                 justify-content: space-around;
@@ -110,7 +110,7 @@
                             transform: translate(40px, 65px);
                             z-index: 2;
                             span {
-                                background: url('../../images/books.jpg');
+                                background: url('../images/books.jpg');
                                 background-size: cover;
                             }
                         }
@@ -118,14 +118,14 @@
                             transform: translate(-40px, 30px);
                             z-index: 1;
                             span {
-                                background: url('../../images/codes.jpg');
+                                background: url('../images/codes.jpg');
                                 background-size: cover;
                             }
                         }
                         &:nth-child(3){
                             transform: translate(40px, -20px);
                             span {
-                                background: url('../../images/solve.jpg');
+                                background: url('../images/solve.jpg');
                                 background-size: cover;
                             }
                         }
@@ -151,8 +151,7 @@
             }
             &.two-and-half {
                 height: 80vh;
-                background-color: transparent;
-                background-color: rgba(238, 130, 238, 0.205);
+                background-color: rgba(77, 77, 77, .5);
                 display: flex;
                 justify-content: space-around;
 
@@ -189,35 +188,35 @@
                         height: 170px;
                     }
                     &:nth-child(1) span {
-                        background: url('../../images/yt-1.jpg');
+                        background: url('../images/yt-1.jpg');
                         background-size: contain;
                     }
                     &:nth-child(2) span {
-                        background: url('../../images/yt-2.jpg');
+                        background: url('../images/yt-2.jpg');
                         background-size: contain;
                     }
                     &:nth-child(3) span {
-                        background: url('../../images/yt-3.jpg');
+                        background: url('../images/yt-3.jpg');
                         background-size: contain;
                     }
                     &:nth-child(4) span {
-                        background: url('../../images/yt-4.jpg');
+                        background: url('../images/yt-4.jpg');
                         background-size: contain;
                     }
                     &:nth-child(5) span {
-                        background: url('../../images/yt-5.jpg');
+                        background: url('../images/yt-5.jpg');
                         background-size: contain;
                     }
                     &:nth-child(6) span {
-                        background: url('../../images/yt-6.jpg');
+                        background: url('../images/yt-6.jpg');
                         background-size: contain;
                     }
                     &:nth-child(7) span {
-                        background: url('../../images/yt-7.jpg');
+                        background: url('../images/yt-7.jpg');
                         background-size: contain;
                     }
                     &:nth-child(8) span {
-                        background: url('../../images/yt-8.jpg');
+                        background: url('../images/yt-8.jpg');
                         background-size: contain;
                     }
                 }
