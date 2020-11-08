@@ -111,12 +111,33 @@ function Home() {
                {codeArea(`("hello world")`)}
                {codeArea(`var a = 5;`, `var b = 3;`, `a + b + 10`)}
                {codeArea(
-                 `function helloWorld(text) {`, `   return text;`, `}`, 
-                  `helloWorld('good bye world')`
+                 `const greet = (name, age) => {`, '   return `Hi there, my name is ${name} and I am ${age}`', `};`, 
+                  `greet("Ahmed", 32)`
                )}
              </div>
              <p style={{color:"#ddd", marginTop:"22px"}}><span style={{color:"#f88"}}>CAUTION:</span> dont try running infinte loops.</p>
              <CodeShop />
+           </section>
+
+           <section className="section two-and-half">
+             <div>
+               <h1>Time Complexity</h1>
+               <p>      
+                Why does building a heap only take O(N) time? What does O(logN) 
+                really mean? What's the time-complexity difference between appending 
+                a value to an array and adding a character to a string? We address all 
+                of these things, and more.
+               </p>
+             </div>
+             <div>
+               <h1>Space Complexity</h1>
+               <p>
+               You know that thing you're kinda familiar with but not really? Yeah, 
+               that's space complexity. And it turns out it's pretty important. 
+               All of our video explanations dive deep into 
+               space-complexity to turn you into a well rounded Big O expert.
+               </p>
+             </div>
            </section>
           
            <section className="section three">

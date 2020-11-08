@@ -114,6 +114,7 @@ body:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 98.8vw;
 }
 
 .home main .section.one {
@@ -210,6 +211,25 @@ body:before {
 .home main .section.two p {
   color: white;
   font-size: 22px;
+}
+
+.home main .section.two-and-half {
+  height: 80vh;
+  background-color: transparent;
+  background-color: rgba(238, 130, 238, 0.205);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home main .section.two-and-half div {
+  width: 40vw;
+  background-color: #4b4a4a;
+  padding: 30px;
+  color: white;
+  border: 2px solid white;
 }
 
 .home main .section.three {
