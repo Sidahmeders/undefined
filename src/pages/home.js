@@ -3,6 +3,9 @@ import '../styles/home.scss'
 import CodeShop from '../components/codeShop'
 import { codeArea } from '../components/codeSnippet'
 
+import DB from '../icons/database-solid.svg'
+import Time from '../icons/hourglass-solid.svg'
+
 
 function Home() {
   
@@ -128,6 +131,7 @@ function Home() {
                 a value to an array and adding a character to a string? We address all 
                 of these things, and more.
                </p>
+               <img src={Time} alt="time"/>
              </div>
              <div>
                <h1>Space Complexity</h1>
@@ -137,6 +141,7 @@ function Home() {
                All of our video explanations dive deep into 
                space-complexity to turn you into a well rounded Big O expert.
                </p>
+               <img src={DB} alt="db"/>
              </div>
            </section>
           

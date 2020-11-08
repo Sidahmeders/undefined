@@ -151,19 +151,29 @@
             }
             &.two-and-half {
                 height: 80vh;
-                background-color: rgba(77, 77, 77, .5);
+                background-color: transparent;
                 display: flex;
                 justify-content: space-around;
 
                 div {
-                    width: 40vw;
-                    background-color: rgb(75, 74, 74);
+                    width: 45vw;
+                    font-size: 1.2em;
+                    background-color: $prime-col;
                     padding: 30px;
-                    color: white;
-                    border: 2px solid white;
+                    color: $second-col;
+                    border: 2px solid $second-col;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        padding: 20px;
+                        background-color: $thir-col;
+                        border-radius: 2px;
+                        margin-top: 15px;
+                    }
                 }
             }
-            &.three { 
+            &.three {
                 justify-content: center;
                 flex-wrap: wrap;
                 
